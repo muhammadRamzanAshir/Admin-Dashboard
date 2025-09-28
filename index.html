@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="main-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo-section">
+                <div class="logo-dot">
+                    <div class="dot-row">
+                        <div class="dot blue"></div>
+                        <div class="dot red"></div>
+                    </div>
+                    <div class="dot-row">
+                        <div class="dot yellow"></div>
+                        <div class="dot green"></div>
+                    </div>
+                </div>
+                <div class="logo-title">Dashboard</div>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item active" data-tab="dashboard">
+                    <i class="nav-icon fas fa-th-large"></i>
+                    <span class="nav-text">Dashboard</span>
+                </li>
+                <li class="nav-item" data-tab="scrapers">
+                    <i class="nav-icon fas fa-spider"></i>
+                    <span class="nav-text">Scrapers</span>
+                </li>
+                <li class="nav-item" data-tab="users">
+                    <i class="nav-icon fas fa-users"></i>
+                    <span class="nav-text">Users</span>
+                </li>
+                <li class="nav-item" data-tab="export">
+                    <i class="nav-icon fas fa-download"></i>
+                    <span class="nav-text">Export</span>
+                </li>
+                <li class="nav-item" data-tab="settings">
+                    <i class="nav-icon fas fa-cog"></i>
+                    <span class="nav-text">Settings</span>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Content Area -->
+        <div class="content-area">
+            <!-- Dashboard Tab -->
+            <div class="tab-content active" id="dashboard">
+                <div class="page-header">
+                    <h1 class="page-title">Dashboard</h1>
+                    <div class="stats-bar">
+                        <div class="stat-item">
+                            <div>
+                                <div class="stat-label">CPU</div>
+                                <div class="stat-bar-visual cpu"></div>
+                            </div>
+                            <div class="stat-value">59%</div>
+                        </div>
+                        <div class="stat-item">
+                            <div>
+                                <div class="stat-label">RAM</div>
+                                <div class="stat-bar-visual ram"></div>
+                            </div>
+                            <div class="stat-value">49%</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-label">FREE</div>
+                            <div class="stat-value">100 Mbps</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-content">
+                    <div class="main-section">
+                        <div class="expedia-logo">
+                            <div class="expedia-icon"></div>
+                            Expedia
+                        </div>
+
+                        <div class="form-section">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label"><i class="fa fa-spider"></i> Select Spider</label>
+                                    <select class="form-control">
+                                        <option>Blue Book</option>
+                                        <option>Blue Book</option>
+                                        <option>Blue Book</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label"><i class="fas fa-link"></i> Enter Url</label>
+                                    <input type="text" class="form-control" value="http://example.com">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="control-buttons">
+                            <button class="control-btn active"><i class="fas fa-play"></i></button>
+                            <button class="control-btn"><i class="fas fa-pause"></i></button>
+                            <button class="control-btn"><i class="fas fa-stop"></i></button>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="btn-primary">
+                                <i class="fas fa-download me-2"></i>DOWNLOAD
+                            </button>
+                            <button class="btn-secondary">SAVE</button>
+                        </div>
+
+                        <div class="stats-cards">
+                            <div class="stat-card purple">
+                                <div class="stat-number">11k</div>
+                                <div class="stat-desc">Records Listed</div>
+                            </div>
+                            <div class="stat-card blue">
+                                <div class="stat-number">28K</div>
+                                <div class="stat-desc">Page Scraped</div>
+                            </div>
+                            <div class="stat-card red">
+                                <div class="stat-number">173</div>
+                                <div class="stat-desc">Errors</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-sidebar">
+                        <h3 class="sidebar-title">Other platforms</h3>
+                        
+                        <div class="platform-item">
+                            <div class="platform-info">
+                                <div class="platform-icon pink">4sq</div>
+                                <div class="platform-details">
+                                    <div class="platform-name">Foursquare</div>
+                                    <div class="platform-count">11k</div>
+                                </div>
+                            </div>
+                            <div class="platform-rate">3% /h</div>
+                        </div>
+
+                        <div class="platform-item">
+                            <div class="platform-info">
+                                <div class="platform-icon red">Y</div>
+                                <div class="platform-details">
+                                    <div class="platform-name">Yelp</div>
+                                    <div class="platform-count">2.5k</div>
+                                </div>
+                            </div>
+                            <div class="platform-rate">500 /p</div>
+                        </div>
+
+                        <div class="platform-item">
+                            <div class="platform-info">
+                                <div class="platform-icon orange">OT</div>
+                                <div class="platform-details">
+                                    <div class="platform-name">Open Table</div>
+                                    <div class="platform-count">25k</div>
+                                </div>
+                            </div>
+                            <div class="platform-rate">500 /p</div>
+                        </div>
+
+                        <div class="platform-item">
+                            <div class="platform-info">
+                                <div class="platform-icon teal">TA</div>
+                                <div class="platform-details">
+                                    <div class="platform-name">Tripadvisor</div>
+                                    <div class="platform-count">11k</div>
+                                </div>
+                            </div>
+                            <div class="platform-rate">1.5k /p</div>
+                        </div>
+
+                        <div class="platform-item">
+                            <div class="platform-info">
+                                <div class="platform-icon crimson">Z</div>
+                                <div class="platform-details">
+                                    <div class="platform-name">Zomato</div>
+                                    <div class="platform-count">11k</div>
+                                </div>
+                            </div>
+                            <div class="platform-rate">1.5 /p</div>
+                        </div>
+
+                        <div class="platform-item">
+                            <div class="platform-info">
+                                <div class="platform-icon coral">ZA</div>
+                                <div class="platform-details">
+                                    <div class="platform-name">Zappat</div>
+                                    <div class="platform-count">11k</div>
+                                </div>
+                            </div>
+                            <div class="platform-rate">1.5 /p</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scrapers Tab -->
+            <div class="tab-content" id="scrapers">
+                <div class="page-header">
+                    <h1 class="page-title">Scrapers</h1>
+                    <p style="color: var(--text-secondary); margin-top: 10px;">Select and configure your data scraping sources</p>
+                </div>
+                
+                <div class="scrapers-grid">
+                    <!-- Popular Platforms -->
+                    <div class="scraper-category">
+                        <h3 class="category-title">Popular Platforms</h3>
+                        <div class="scrapers-list">
+                            <div class="scraper-item active" data-scraper="expedia">
+                                <div class="scraper-icon expedia-icon">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Expedia</h4>
+                                    <p>Hotels, flights, and travel packages</p>
+                                    <div class="scraper-status running">Running</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle active"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="booking">
+                                <div class="scraper-icon booking-icon">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Booking.com</h4>
+                                    <p>Hotel bookings and accommodations</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="airbnb">
+                                <div class="scraper-icon airbnb-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Airbnb</h4>
+                                    <p>Vacation rentals and experiences</p>
+                                    <div class="scraper-status paused">Paused</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Restaurant & Food -->
+                    <div class="scraper-category">
+                        <h3 class="category-title">Restaurant & Food</h3>
+                        <div class="scrapers-list">
+                            <div class="scraper-item" data-scraper="yelp">
+                                <div class="scraper-icon yelp-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Yelp</h4>
+                                    <p>Restaurant reviews and ratings</p>
+                                    <div class="scraper-status running">Running</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle active"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="zomato">
+                                <div class="scraper-icon zomato-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Zomato</h4>
+                                    <p>Restaurant listings and food delivery</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="opentable">
+                                <div class="scraper-icon opentable-icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>OpenTable</h4>
+                                    <p>Restaurant reservations</p>
+                                    <div class="scraper-status running">Running</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle active"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Local Business -->
+                    <div class="scraper-category">
+                        <h3 class="category-title">Local Business</h3>
+                        <div class="scrapers-list">
+                            <div class="scraper-item" data-scraper="foursquare">
+                                <div class="scraper-icon foursquare-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Foursquare</h4>
+                                    <p>Location-based business directory</p>
+                                    <div class="scraper-status running">Running</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle active"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="yellowpages">
+                                <div class="scraper-icon yellowpages-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Yellow Pages</h4>
+                                    <p>Business directory and contact info</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="tripadvisor">
+                                <div class="scraper-icon tripadvisor-icon">
+                                    <i class="fas fa-camera"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>TripAdvisor</h4>
+                                    <p>Travel reviews and attractions</p>
+                                    <div class="scraper-status paused">Paused</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- E-commerce -->
+                    <div class="scraper-category">
+                        <h3 class="category-title">E-commerce</h3>
+                        <div class="scrapers-list">
+                            <div class="scraper-item" data-scraper="amazon">
+                                <div class="scraper-icon amazon-icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Amazon</h4>
+                                    <p>Product listings and prices</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="ebay">
+                                <div class="scraper-icon ebay-icon">
+                                    <i class="fas fa-gavel"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>eBay</h4>
+                                    <p>Auction and marketplace data</p>
+                                    <div class="scraper-status running">Running</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle active"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="etsy">
+                                <div class="scraper-icon etsy-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Etsy</h4>
+                                    <p>Handmade and vintage items</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Real Estate -->
+                    <div class="scraper-category">
+                        <h3 class="category-title">Real Estate</h3>
+                        <div class="scrapers-list">
+                            <div class="scraper-item" data-scraper="zillow">
+                                <div class="scraper-icon zillow-icon">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Zillow</h4>
+                                    <p>Property listings and values</p>
+                                    <div class="scraper-status paused">Paused</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="realtor">
+                                <div class="scraper-icon realtor-icon">
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Realtor.com</h4>
+                                    <p>Real estate marketplace</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Portals -->
+                    <div class="scraper-category">
+                        <h3 class="category-title">Job Portals</h3>
+                        <div class="scrapers-list">
+                            <div class="scraper-item" data-scraper="linkedin">
+                                <div class="scraper-icon linkedin-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>LinkedIn</h4>
+                                    <p>Professional networking and jobs</p>
+                                    <div class="scraper-status running">Running</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle active"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+
+                            <div class="scraper-item" data-scraper="indeed">
+                                <div class="scraper-icon indeed-icon">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="scraper-info">
+                                    <h4>Indeed</h4>
+                                    <p>Job search and company reviews</p>
+                                    <div class="scraper-status stopped">Stopped</div>
+                                </div>
+                                <div class="scraper-actions">
+                                    <button class="action-btn configure"><i class="fas fa-cog"></i></button>
+                                    <button class="action-btn toggle"><i class="fas fa-power-off"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bulk Actions -->
+                <div class="bulk-scraper-actions">
+                    <button class="bulk-action-btn start-all">
+                        <i class="fas fa-play"></i>
+                        Start All
+                    </button>
+                    <button class="bulk-action-btn stop-all">
+                        <i class="fas fa-stop"></i>
+                        Stop All
+                    </button>
+                    <button class="bulk-action-btn add-scraper">
+                        <i class="fas fa-plus"></i>
+                        Add Custom Scraper
+                    </button>
+                </div>
+            </div>
+
+            <!-- Users Tab -->
+            <div class="tab-content" id="users">
+                <div class="page-header">
+                    <h1 class="page-title">Users</h1>
+                </div>
+                <div class="users-table">
+                    <div style="padding: 40px; text-align: center;">
+                        <i class="fas fa-users fa-4x mb-3" style="color: #ccc;"></i>
+                        <h3>User Management</h3>
+                        <p>Manage user accounts, permissions, and access levels</p>
+                        <button class="btn-primary">Add New User</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Export Tab -->
+            <div class="tab-content" id="export">
+                <div class="page-header">
+                    <h1 class="page-title">Export</h1>
+                </div>
+                <div class="export-content">
+                    <div class="bulk-actions">
+                        <button class="select-all-btn" id="selectAllBtn">Select All</button>
+                        <button class="bulk-download-btn" id="bulkDownloadBtn">Download Selected</button>
+                        <span class="selected-count" id="selectedCount">0 items selected</span>
+                    </div>
+
+                    <div class="data-table">
+                        <div class="table-header">
+                            <div></div>
+                            <div>Search term</div>
+                            <div>City</div>
+                            <div class="hide-mobile">Country</div>
+                            <div class="hide-mobile">Region</div>
+                            <div>Action</div>
+                        </div>
+
+                        <div class="table-row" data-id="1">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="1"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-restaurant">🍽️</div>
+                                <div class="category-text">Restaurant</div>
+                            </div>
+                            <div class="location-text">Los Angeles</div>
+                            <div class="country-text hide-mobile">USA</div>
+                            <div class="region-text hide-mobile">California</div>
+                            <div>
+                                <button class="download-btn" data-item="Restaurant in Los Angeles">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="2">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="2"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-hotel">🏨</div>
+                                <div class="category-text">Hotel</div>
+                            </div>
+                            <div class="location-text">Chicago</div>
+                            <div class="country-text hide-mobile">USA</div>
+                            <div class="region-text hide-mobile">Illinois</div>
+                            <div>
+                                <button class="download-btn" data-item="Hotel in Chicago">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="3">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="3"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-hostel">🏠</div>
+                                <div class="category-text">Hostel</div>
+                            </div>
+                            <div class="location-text">Bath</div>
+                            <div class="country-text hide-mobile">United Kingdom</div>
+                            <div class="region-text hide-mobile">South West, England</div>
+                            <div>
+                                <button class="download-btn" data-item="Hostel in Bath">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="4">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="4"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-sport">⚽</div>
+                                <div class="category-text">Sport club</div>
+                            </div>
+                            <div class="location-text">Detroit</div>
+                            <div class="country-text hide-mobile">USA</div>
+                            <div class="region-text hide-mobile">Michigan</div>
+                            <div>
+                                <button class="download-btn" data-item="Sport club in Detroit">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="5">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="5"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-beauty">💄</div>
+                                <div class="category-text">Beauty salon</div>
+                            </div>
+                            <div class="location-text">Bristol</div>
+                            <div class="country-text hide-mobile">United Kingdom</div>
+                            <div class="region-text hide-mobile">South West, England</div>
+                            <div>
+                                <button class="download-btn" data-item="Beauty salon in Bristol">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="6">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="6"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-delivery">🚚</div>
+                                <div class="category-text">Delivery</div>
+                            </div>
+                            <div class="location-text">Chemnitz</div>
+                            <div class="country-text hide-mobile">Germany</div>
+                            <div class="region-text hide-mobile">Saxony</div>
+                            <div>
+                                <button class="download-btn" data-item="Delivery in Chemnitz">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="7">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="7"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-coffee">☕</div>
+                                <div class="category-text">Coffeehouse</div>
+                            </div>
+                            <div class="location-text">Potsdam</div>
+                            <div class="country-text hide-mobile">Germany</div>
+                            <div class="region-text hide-mobile">Brandenburg</div>
+                            <div>
+                                <button class="download-btn" data-item="Coffeehouse in Potsdam">Download</button>
+                            </div>
+                        </div>
+
+                        <div class="table-row" data-id="8">
+                            <div class="row-checkbox">
+                                <div class="custom-checkbox" data-row="8"></div>
+                            </div>
+                            <div class="category-info">
+                                <div class="category-icon icon-fastfood">🍟</div>
+                                <div class="category-text">Fast food</div>
+                            </div>
+                            <div class="location-text">Darmstadt</div>
+                            <div class="country-text hide-mobile">Germany</div>
+                            <div class="region-text hide-mobile">Hesse</div>
+                            <div>
+                                <button class="download-btn" data-item="Fast food in Darmstadt">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Settings Tab -->
+            <div class="tab-content" id="settings">
+                <div class="page-header">
+                    <h1 class="page-title">Settings</h1>
+                </div>
+                
+                <div class="settings-section">
+                    <h3 class="settings-title">General Settings</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">Site Name</label>
+                            <input type="text" class="form-control" value="Dashboard">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Default Language</label>
+                            <select class="form-control">
+                                <option>English</option>
+                                <option>Spanish</option>
+                                <option>French</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">API Configuration</h3>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label class="form-label">API Key</label>
+                            <input type="password" class="form-control" value="••••••••••••••••">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Rate Limit</label>
+                            <input type="number" class="form-control" value="1000">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-section">
+                    <h3 class="settings-title">Notification Settings</h3>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox" checked> Email notifications
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">
+                            <input type="checkbox"> SMS notifications
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/scripts.js"></script>
+</body>
+</html>
