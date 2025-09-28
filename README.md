@@ -79,7 +79,7 @@ Adjust table columns for your scraping use case.
 
 
 📜 License
-This project is MIT Licensed – free to use and modify.
+This project is Mr Ashir Licensed – free to use and modify.
 
 💡 Tip
 If you’re connecting this dashboard to Django/Flask, place the HTML inside your templates and update forms/tables to use dynamic data.
