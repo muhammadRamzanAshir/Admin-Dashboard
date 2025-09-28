@@ -75,7 +75,6 @@ Adjust table columns for your scraping use case.
 <img width="1896" height="1143" alt="four" src="https://github.com/user-attachments/assets/3d0125f7-d047-4903-aa52-c1a589dd3fd9" />
 <img width="1896" height="1017" alt="5" src="https://github.com/user-attachments/assets/3ab5a33c-0741-4399-8cae-537e7346a190" />
 <img width="2083" height="1374" alt="screenshot" src="https://github.com/user-attachments/assets/d49b223d-507b-4e81-8a00-f0c8390149f2" />
-<img width="1920" height="2571" alt="screencapture-127-0-0-1-8000-2025-01-19-14_02_48" src="https://github.com/user-attachments/assets/62bebdce-0ebb-4089-9668-9dc84af8dcb2" />
 
 
 
